@@ -1,8 +1,8 @@
 {
-  "name": "markdown-editor",
+  "name": "client",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "dev": "nodemon --exec electron ."
   },
@@ -10,10 +10,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^16.0.1",
-    "electron-builder": "^22.14.5"
+    "electron": "^16.0.1"
   },
   "dependencies": {
-    "simplemde": "^1.11.2"
+    "screenshot-desktop": "^1.12.7",
+    "socket.io-client": "^4.4.0",
+    "uuid": "^8.3.2"
   }
 }
