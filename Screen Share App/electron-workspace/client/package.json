@@ -1,0 +1,37 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon --exec electron .",
+    "build": "electron-packager . --all",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^16.0.1",
+    "electron-builder": "^22.14.5"
+  },
+  "dependencies": {
+    "electron-splashscreen": "^1.0.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "screenshot-desktop": "^1.12.7",
+    "socket.io-client": "^4.4.0",
+    "uuid": "^8.3.2"
+  },
+  "build": {
+    "appId": "com.screen-cast.app",
+    "productName": "Screen Cast",
+    "target": "NSIS",
+    "directories": {
+      "output": "build"
+    },
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false
+    }
+  }
+}
